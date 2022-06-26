@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: njsuiegdgafhr5t
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  type: ClusterIP  
+  ports:
+  - name: "njsuiegdgafhr5t"
+    port: 8080
+  selector:
+    app: njsuiegdgafhr5t
